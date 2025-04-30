@@ -24,6 +24,12 @@ app.use(cors({
     credentials: true  
 }))
 
+// Default API route to ensure the API is working
+app.get('/', (req, res) => {
+    res.json({ message: "Blog API is working!" })  
+    
+})
+
 // API route setup
 app.use('/api/auth', AuthRoute)
 app.use('/api/user', UserRoute)  
