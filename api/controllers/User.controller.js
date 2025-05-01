@@ -73,16 +73,15 @@ export const updateUser = async (req, res, next) => {
 // ==============================
 export const getAllUser = async (req, res, next) => {
     try {
-        const users = await User.find().sort({ createdAt: -1 }).lean().exec();
-
+        const user = await User.find().sort({ createdAt: -1 })
         res.status(200).json({
             success: true,
-            users
-        });
+            user
+        })
     } catch (error) {
-        next(handleError(500, error.message));
+        next(handleError(500, error.message))
     }
-};
+}
 
 // ==============================
 // Delete User (Admin use case)
