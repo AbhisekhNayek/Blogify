@@ -1,4 +1,4 @@
-# 🌟 Blogs Platform 🌟
+# 🌟 Blogify - Blogs Platform 🌟
 
 Welcome to the **Blogs Platform**! 🚀 This is a full-stack project built using **Vite**, **ShadCN**, **TailwindCSS**, **Node.js**, **Express**, **MongoDB**, and **Firebase**. It provides a modern, fast, and responsive user interface to manage and read blog posts, while offering secure backend functionality for authentication and data management. 📚🔒
 
